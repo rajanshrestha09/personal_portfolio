@@ -176,8 +176,9 @@ p {
   }
   /* ============ About me ============= */
   div.about {
-    margin-top: 30px;
+    margin: 30px 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
@@ -205,6 +206,7 @@ p {
   /* ============ Resume  ============= */
   div.resume-wrap {
     padding-top: 50px;
+    background-color: #1d1d20;
   }
   div.resume-wrap h2 {
     text-align: center;
@@ -212,10 +214,9 @@ p {
     text-transform: uppercase;
   }
   div.resume-wrap div.resume {
-    margin-top: 30px;
     padding-top: 50px;
-    background-color: #1d1d20;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: start;
     column-gap: 20px;
@@ -228,6 +229,7 @@ p {
   }
   div.resume-wrap div.resume div.resume-topic ul li a {
     color: #b4adad;
+    cursor: pointer;
   }
   div.resume-wrap div.resume div.resume-topic ul li a:hover {
     color: #fafcfa;
@@ -268,6 +270,9 @@ p {
   div.resume-wrap div.resume div.resume-details div#expericence div.experice-details div.duties ul li {
     margin-left: 10px;
     list-style-type: disc;
+  }
+  div.resume-wrap div.resume div.resume-details div#skills {
+    padding-bottom: 30px;
   }
   div.resume-wrap div.resume div.resume-details div#skills div ul {
     margin-left: 14px;
@@ -417,10 +422,11 @@ p {
     margin: 0 50px;
   }
   div.about-wrap div.about {
-    width: 800px;
+    width: 700px;
     margin: auto;
     margin-top: 30px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   /* ============ Resume  ============= */
@@ -428,18 +434,17 @@ p {
     background-color: #1d1d20;
   }
   div.resume-wrap div.resume {
-    column-gap: 60px;
-    width: 800px;
+    width: 700px;
     margin: 20px auto;
+    flex-direction: row;
+    justify-content: space-between;
   }
   div.resume-wrap div.resume div.resume-topic ul li {
     font-size: 1.4rem;
     font-weight: 600;
   }
-  div.resume-wrap div.resume div.resume-topic ul li a {
-    cursor: pointer;
-  }
   div.resume-wrap div.resume div.resume-details {
+    width: 600px;
     margin-bottom: 30px;
   }
   div.resume-wrap div.resume div.resume-details hr {
@@ -456,7 +461,7 @@ p {
     margin-bottom: 30px;
   }
   div.resume-wrap div.resume div.resume-details div#expericence div.experice-details div.jobtitle {
-    width: 700px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
   }
