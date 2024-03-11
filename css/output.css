@@ -1,0 +1,550 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #20242d;
+  color: #b4adad;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 400px) {
+  /* Styles for screens with a minimum width of 400px */
+  /* ========================nav ====================  */
+  nav {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  nav div.nav-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav div.nav-top div.navbar {
+    display: none;
+    margin: 20px 5px;
+  }
+  nav div.nav-top div.navbar ul.nav-item {
+    display: flex;
+    flex-direction: column;
+  }
+  nav div.nav-top div.navbar ul.nav-item li.nav-list {
+    list-style-type: none;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  nav div.nav-top div.navbar ul.nav-item li.nav-list a {
+    color: #b4adad;
+  }
+  nav div.nav-top div.navbar ul.nav-item li.nav-list :hover {
+    color: #fff;
+  }
+  nav div.nav-top div.navbar div.searchbar {
+    background-color: #fff;
+    height: 32px;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+    position: relative;
+  }
+  nav div.nav-top div.navbar div.searchbar input {
+    border: transparent;
+    padding-right: 2px;
+    margin: 4px;
+    position: absolute;
+    left: 0;
+  }
+  nav div.nav-top div.navbar div.searchbar i {
+    color: #444fe3;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+  }
+  nav div.hamburger {
+    margin: 10px;
+  }
+  nav div.hamburger button {
+    fill: white;
+    color: white;
+    padding: 4px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  header {
+    background-color: #1d1d20;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  header div.profile {
+    margin-top: 50px;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  header div.profile img.profile-img {
+    height: "150px";
+    width: "100px";
+  }
+  header div.info-details {
+    margin: 20px 0;
+    text-align: center;
+  }
+  header div.info-details p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.3;
+  }
+  header div.info-details p span.name {
+    color: rgb(89, 89, 185);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  header div.info-details button.contact {
+    margin: 12px 0;
+    padding: 8px 6px;
+    font-size: 1.2rem;
+    background: #444fe3;
+    color: #b4adad;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  header div.info-details button.contact:hover {
+    color: white;
+    box-shadow: 5px 2px 2px white;
+  }
+  header div.info-details div.social-handle {
+    margin-top: 8px;
+  }
+  header div.info-details div.social-handle a button {
+    color: #74c0fc;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+  }
+  header div.info-details div.social-handle a button i:hover {
+    font-size: 26px;
+  }
+  /* ============ About me ============= */
+  div.about {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  div.about h2.aboutme {
+    font-size: 2rem;
+    text-transform: uppercase;
+    align-self: center;
+  }
+  div.about div.details {
+    margin-right: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  div.about div.details p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  div.about div.details p span.details-head {
+    font-size: 1.2rem;
+    color: #b4adad;
+    margin-right: 4px;
+  }
+  /* ============ Resume  ============= */
+  div.resume-wrap {
+    padding-top: 50px;
+  }
+  div.resume-wrap h2 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  div.resume-wrap div.resume {
+    margin-top: 30px;
+    padding-top: 50px;
+    background-color: #1d1d20;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    column-gap: 20px;
+  }
+  div.resume-wrap div.resume div.resume-topic ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  div.resume-wrap div.resume div.resume-topic ul li a {
+    color: #b4adad;
+  }
+  div.resume-wrap div.resume div.resume-topic ul li a:hover {
+    color: #fafcfa;
+  }
+  div.resume-wrap div.resume div.resume-details {
+    /* =========Skills========== */
+  }
+  div.resume-wrap div.resume div.resume-details div h3 {
+    color: #444fe3;
+    text-align: start;
+    margin-bottom: 4px;
+  }
+  div.resume-wrap div.resume div.resume-details div#education {
+    margin-bottom: 20px;
+  }
+  div.resume-wrap div.resume div.resume-details div#education p span {
+    font-weight: 600;
+    color: #74c0fc;
+  }
+  div.resume-wrap div.resume div.resume-details div#expericence {
+    margin-bottom: 20px;
+  }
+  div.resume-wrap div.resume div.resume-details div#expericence div.experice-details {
+    margin: 10px 0;
+    padding: 8px 0;
+  }
+  div.resume-wrap div.resume div.resume-details div#expericence div.experice-details div.jobtitle {
+    color: #74c0fc;
+    margin-bottom: 8px;
+  }
+  div.resume-wrap div.resume div.resume-details div#expericence div.experice-details div.companyname {
+    color: #444fe3;
+    margin-bottom: 4px;
+  }
+  div.resume-wrap div.resume div.resume-details div#expericence div.experice-details div.duties ul {
+    margin-left: 14px;
+  }
+  div.resume-wrap div.resume div.resume-details div#expericence div.experice-details div.duties ul li {
+    margin-left: 10px;
+    list-style-type: disc;
+  }
+  div.resume-wrap div.resume div.resume-details div#skills div ul {
+    margin-left: 14px;
+  }
+  div.resume-wrap div.resume div.resume-details div#skills div ul li {
+    margin-left: 10px;
+    list-style-type: disc;
+  }
+  /* =========== Project ============== */
+  div.project {
+    background-color: #20242d;
+    margin: 50px 0;
+  }
+  div.project h2 {
+    text-align: center;
+    margin: 50px;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  div.project div.project-list {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 40px;
+  }
+  div.project div.project-list figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 5px 5px 1px #444fe3;
+  }
+  div.project div.project-list figure figcaption {
+    margin-top: 20px;
+    color: #20242d;
+    font-weight: 600;
+  }
+  div.project div.project-list figure div.linkTo {
+    margin-top: 16px;
+  }
+  div.project div.project-list figure div.linkTo a {
+    font-size: 1.2rem;
+    border: 2px solid red;
+    padding: 4px 6px;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: #b4adad;
+    text-transform: uppercase;
+  }
+  div.project div.project-list figure div.linkTo a.demo {
+    background-color: #444fe3;
+  }
+  div.project div.project-list figure div.linkTo a:hover {
+    background-color: #1d1d20;
+    color: #fafcfa;
+  }
+  /* ======== Contact Me ======== */
+  div.contact {
+    margin-top: 50px;
+    background-color: #1d1d20;
+  }
+  div.contact h2 {
+    padding: 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  div.contact div.contact-details div.detail {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.contact div.contact-details div.detail i {
+    margin-top: 10px;
+    padding: 20px 0;
+  }
+  div.contact div.contact-details div.detail p.address {
+    margin: 6px;
+  }
+  div.contact div.contact-details div.detail p.address-point {
+    margin: 20px 0;
+  }
+  div.footer {
+    height: 50px;
+    display: flex;
+  }
+  div.footer p {
+    margin: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* Styles for screens with a minimum width of 400px */
+  /* ========================Header ====================  */
+  nav {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  nav div.nav-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  nav div.nav-top div.navbar {
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  nav div.nav-top div.navbar ul.nav-item {
+    display: flex;
+    flex-direction: row;
+  }
+  nav div.nav-top div.navbar ul.nav-item li.nav-list {
+    margin: 12px;
+    padding: 4px;
+  }
+  nav div.nav-top div.navbar div.searchbar {
+    margin-left: 40px;
+  }
+  nav div.nav-top div.navbar div.searchbar input {
+    border: none;
+    margin: 6px;
+    padding: 4px;
+  }
+  nav div.nav-top div.navbar div.searchbar i {
+    color: #444fe3;
+  }
+  nav div.hamburger {
+    display: none;
+  }
+  /* ============ About me ============= */
+  div.about-wrap {
+    margin: 0 50px;
+  }
+  div.about-wrap div.about {
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* ============ Resume  ============= */
+  div.resume-wrap {
+    background-color: #1d1d20;
+  }
+  div.resume-wrap div.resume {
+    column-gap: 60px;
+    width: 800px;
+    margin: 20px auto;
+  }
+  div.resume-wrap div.resume div.resume-topic ul li {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  div.resume-wrap div.resume div.resume-topic ul li a {
+    cursor: pointer;
+  }
+  div.resume-wrap div.resume div.resume-details {
+    margin-bottom: 30px;
+  }
+  div.resume-wrap div.resume div.resume-details hr {
+    margin-bottom: 10px;
+  }
+  div.resume-wrap div.resume div.resume-details div h3 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  div.resume-wrap div.resume div.resume-details div#education {
+    margin-bottom: 20px;
+  }
+  div.resume-wrap div.resume div.resume-details div#expericence {
+    margin-bottom: 30px;
+  }
+  div.resume-wrap div.resume div.resume-details div#expericence div.experice-details div.jobtitle {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+  div.resume-wrap div.resume div.resume-details div#skills {
+    margin-bottom: 30px;
+  }
+  /* =========== Project ============== */
+  div.project {
+    background-color: #20242d;
+    margin: 50px 0;
+  }
+  div.project h2 {
+    text-align: center;
+    margin: 50px;
+  }
+  div.project div.project-list {
+    margin: auto;
+    width: 800px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 40px;
+  }
+  div.project div.project-list figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 5px 5px 1px #444fe3;
+  }
+  div.project div.project-list figure figcaption {
+    margin-top: 20px;
+  }
+  div.project div.project-list figure figcaption a {
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: #1d1d20;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  div.project div.project-list figure figcaption a:hover {
+    background-color: #444fe3;
+  }
+  div.project div.project-list figure figcaption a {
+    color: #fff;
+  }
+  /* ======== Contact Me ======== */
+  div.contact {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    background-color: #1d1d20;
+  }
+  div.contact h3 {
+    padding: 50px 0;
+    text-align: center;
+  }
+  div.contact div.contact-details {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    column-gap: 10px;
+  }
+  div.contact div.contact-details div.detail {
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px #20242d;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+  }
+  div.contact div.contact-details div.detail i {
+    margin-top: 10px;
+    padding: 20px 0;
+  }
+  div.contact div.contact-details div.detail p.address {
+    margin: 6px;
+  }
+  div.contact div.contact-details div.detail p.address-point {
+    margin: 20px 0;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
